@@ -1,0 +1,6 @@
+---
+hostos: webservers 
+tasks:
+- copy: 
+  content: "File 02 My content" 
+  dest: "02.txt"
