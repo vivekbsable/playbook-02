@@ -1,5 +1,8 @@
----
-- name: Copy using the 'content' for inline data
-  copy:
-    content: '# This file was moved to /etc/other.conf'
-    dest: '02.txt'
+- hosts: all
+  tasks:
+  - name: Ansible create file with content example
+    copy:
+      dest: "remote_server.txt"
+      content: |
+        dog1
+        tiger
