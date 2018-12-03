@@ -1,5 +1,6 @@
 
 - name: Create File on remote machine
+  hosts: all
   remote_user: ansadm
   tasks:
   - name: Ansible create file with content example
