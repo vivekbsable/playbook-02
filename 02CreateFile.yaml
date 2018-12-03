@@ -1,6 +1,5 @@
 ---
-hosts: all 
-tasks:
-- copy: 
-  content: "File 02 My content" 
-  dest: "02.txt"
+- name: Copy using the 'content' for inline data
+  copy:
+    content: '# This file was moved to /etc/other.conf'
+    dest: '02.txt'
