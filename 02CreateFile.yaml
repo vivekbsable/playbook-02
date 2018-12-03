@@ -1,9 +1,9 @@
-- hosts: all
-  remote_user: ansadm
-  tasks:
-  - name: Ansible create file with content example
-    copy:
-      dest: "remote_server.txt"
-      content: |
-        dog1
-        tiger
+
+remote_user: ansadm
+tasks:
+- name: Ansible create file with content example
+  copy:
+    dest: "remote_server.txt"
+    content: |
+      dog1
+      tiger
