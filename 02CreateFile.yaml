@@ -1,6 +1,6 @@
 
 - name: Create File on remote machine
-  hosts: "Group 01"
+  hosts: '{{ host }}'
   remote_user: ansadm
   tasks:
   - name: Ansible create file with content example
